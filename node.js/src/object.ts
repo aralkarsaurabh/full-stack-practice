@@ -2,22 +2,137 @@
 // Create an object representing a student.
 // Include name, age, course, and isPresent.
 
+type Student = {
+    name: string,
+    age: number,
+    course: string,
+    isPresent: boolean
+};
+
+let roll_1: Student = {
+    name: "Saurabh",
+    age: 23,
+    course: "Computer Science",
+    isPresent: true
+};
+
+console.log(roll_1);
+
+let roll_2: Student = {
+    name: "Piyush",
+    age: 23,
+    course: "Computer Science",
+    isPresent: false,
+};
+
+console.log(roll_2);
+
+console.log('-----------------------------------------------------------------');
+
 // Q2
 // Create an object representing a product.
 // Include name, price, quantity, and category.
+
+type Product = {
+    name: string,
+    price: number,
+    quantity: number,
+    category: string
+};
+
+let product_1: Product = {
+    name: "MacBook Air M5",
+    price: 147000,
+    quantity: 23,
+    category: "Electronics"
+};
+
+console.log(product_1);
+
+let product_2: Product = {
+    name: "iPhone 15",
+    price: 86000,
+    quantity: 12,
+    category: "Electronics"
+};
+
+console.log(product_2);
+
+console.log('-----------------------------------------------------------------');
 
 // Q3
 // Create a user object.
 // Print the user's name and email.
 
+type User = {
+    name: string,
+    email: string,
+    phone: number,
+    city: string
+};
+
+let user_1: User = {
+    name: "Saurabh",
+    email: "saurabharalkar@gmail.com",
+    phone: 9011694002,
+    city: "Hyderabad"
+};
+
+console.log(`Name of the user_1: ${user_1.name}`);
+console.log(`Email of the user_1: ${user_1.email}`);
+
+console.log('-----------------------------------------------------------------')
+
 // Q4
 // Create a car object.
 // Include brand, model, year, price, and isElectric.
+
+type Car = {
+    brand: string,
+    model: string,
+    year: number,
+    price: number,
+    isElectric: boolean
+};
+
+let car_1: Car = {
+    brand: "Maruti Suzuki",
+    model: "Baleno",
+    year: 2024,
+    price: 1050000,
+    isElectric: false
+};
+
+console.log(car_1);
+
+console.log('-----------------------------------------------------------------')
 
 // Q5
 // Create an employee object.
 // Include name, role, salary, and department.
 // Increase the salary by 10%.
+
+type Employee = {
+    name: string,
+    role: string,
+    salary: number,
+    department: string
+};
+
+let emp_1: Employee = {
+    name: "Saurabh",
+    role: "Software Engineer",
+    salary: 1200000,
+    department: "Information Technology"
+};
+
+console.log(emp_1);
+
+emp_1.salary = emp_1.salary + (emp_1.salary * 0.10);
+
+console.log(emp_1);
+
+console.log('-----------------------------------------------------------------');
 
 // Q6
 // Create a bankAccount object.
